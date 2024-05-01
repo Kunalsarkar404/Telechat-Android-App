@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/meetme" />
+
+    <!-- Layout for entering phone number -->
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/ed_check_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invalid country code"
+            android:textColor="@android:color/holo_red_light" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="+0"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Layout for entering verification code -->
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Verification Code"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/ed_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verification Code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't get the code?"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+    <!-- Button to initiate phone number verification -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_arrow_forward_24"
+        app:backgroundTint="@color/purple"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348318725669",
+    "project_id": "echochat-26e13",
+    "storage_bucket": "echochat-26e13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348318725669:android:65862ff582868aa0ae71cc",
+        "android_client_info": {
+          "package_name": "com.example.echochat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDayBiVh89GL-pXUPg0dx5Yz1atIe3_CNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
