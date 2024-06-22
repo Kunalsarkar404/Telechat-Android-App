@@ -23,11 +23,10 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         this.context = context;
     }
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_chat_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_contact, parent, false);
         return new ViewHolder(view);
     }
 
